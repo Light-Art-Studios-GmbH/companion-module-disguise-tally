@@ -1,0 +1,60 @@
+{
+	"name": "companion-module-disguise-tally",
+	"version": "1.0.0",
+	"description": "Bitfocus Companion module \"Disguise: Live Input Tally\" – read-only PGM / PVW / OFF tally for live inputs (video in, NDI, capture) used on the disguise Designer timeline.",
+	"main": "src/main.mjs",
+	"license": "MIT",
+	"author": {
+		"name": "Lucas Hoyer",
+		"email": "lh@lightartstudios.de",
+		"url": "https://lightartstudios.de"
+	},
+	"contributors": [
+		"Light Art Studios GmbH"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Light-Art-Studios-GmbH/companion-module-disguise-tally.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Light-Art-Studios-GmbH/companion-module-disguise-tally/issues"
+	},
+	"homepage": "https://github.com/Light-Art-Studios-GmbH/companion-module-disguise-tally#readme",
+	"keywords": [
+		"companion",
+		"bitfocus",
+		"disguise",
+		"d3",
+		"designer",
+		"tally",
+		"video input",
+		"live update"
+	],
+	"files": [
+		"src/",
+		"companion/",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"format": "prettier -w .",
+		"lint": "eslint",
+		"lint:fix": "eslint --fix",
+		"check": "node --check src/main.mjs && for f in src/*.js; do node --check \"$f\" || exit 1; done",
+		"package": "companion-module-build"
+	},
+	"dependencies": {
+		"@companion-module/base": "2.1.3"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^3.1.0",
+		"eslint": "^9.39.5",
+		"prettier": "^3.8.1",
+		"typescript-eslint": "^8.56.1"
+	},
+	"engines": {
+		"node": "^22.20"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json"
+}

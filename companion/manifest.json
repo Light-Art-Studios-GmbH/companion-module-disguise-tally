@@ -1,0 +1,28 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "disguise-tally",
+	"name": "disguise-tally",
+	"shortname": "d3-tally",
+	"description": "Read-only live input tally for disguise Designer: PGM, PVW or OFF for every live input (video in, NDI, capture)",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/Light-Art-Studios-GmbH/companion-module-disguise-tally.git",
+	"bugs": "https://github.com/Light-Art-Studios-GmbH/companion-module-disguise-tally/issues",
+	"maintainers": [
+		{
+			"name": "Lucas Hoyer (Light Art Studios GmbH)",
+			"email": "lh@lightartstudios.de"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "2.1.3",
+		"entrypoint": "../src/main.mjs"
+	},
+	"manufacturer": "Disguise",
+	"products": ["Live Input Tally"],
+	"keywords": ["disguise", "d3", "Designer", "Tally", "Live Input", "Video In", "NDI", "Live Update", "Read-only"]
+}
